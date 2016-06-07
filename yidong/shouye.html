@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<style>
+*{ margin:0; padding:0;}
+img{ border:none;}
+a{ text-decoration:none;}
+.clear:after{content:''; display:block; clear:both;}
+nav{ width:100%; height:40px; background:#18cfd3;}
+nav h2{ font: bold 18px "方正兰亭超细黑简体"; color:#fff; line-height:40px; padding-left:16px;}
+nav img{ width:26px; height:26px; position:absolute; top:7px; right:16px;}
+img{ width:100%; height:100%;}
+
+a img {border:0}
+ul, ol, li {list-style-type:none;vertical-align:0}
+/* 效果CSS开始 */
+.slider{display:none}
+.focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
+.focus span.current{background:#ccc;}
+header{position:relative;}
+
+.news{ width:100%; height:30px; background:#FBFBCE;}
+.news p{ font:12px "新宋体"; color:#FF9900; line-height:30px; padding-left:10px;}
+
+.box{ width:100%; height:30px;/*background: -moz-linear-gradient( left,#ccc,#000);*/ background:#18DDE2;}
+.box p{ font:18px "新宋体"; color:#FBFBCE; line-height:30px; display:block; text-align:center;}
+
+.search input{ width:90%; height:30px;  border:1px solid #999; font:12px "宋体"; color:#999; border-radius:5px; line-height:30px; margin:10px  0 0 5%; padding-left:10px;}
+.search{ width:100%; height:50px; background:#f0f0f0;}
+
+.quan{ width:100%; height:60px; margin:14px auto;}
+.quan img{ width:30%; height:60px;}
+.img1{ padding-left:3%;}
+
+.table2 td{ width:33%; height:70px; position:relative;}
+.table2 table{ border:1px solid #66CCFF;}
+.table2 p{ font: bold 14px "宋体"; color:#11F097; position:absolute; top:20px; left:20px;}
+
+.content1{ width:100%;}
+.title1{ width:100%; height:30px; background:#fff; margin-top:20px; border-top:1px solid #66CCFF; background:#F5F5F5;}
+.title1 p,.title2 p{ font: bold  15px "方正兰亭超细黑简体"; color:#18DDE2; line-height:30px; padding-left:20px;}
+.content1 ul{ background:#f0f0f0; padding:20px 0 20px 0;}
+.content1 li,.content2 li{ float:left; width:45%; height:300px; border:1px solid #ccc;}
+.content1 li p,.content2 li p{ font:13px "宋体"; color:#333; padding:10px;}
+.content1 h6,.content2 h6{ font:12px "宋体"; color:#ff6600; padding-left:10px;}
+.content1 img,.content2 img{ width:100%; height:70%;}
+.li3{ margin:0 2% 0 4%;}
+.content2 ul{ background:#f0f0f0; padding-top:20px;}
+.ul_last:after{content:''; display:block; clear:both;  padding-bottom:30px;}
+.title2{ width:100%; height:30px; background:#fff;  border-top:1px solid #66CCFF;  background:#F5F5F5;}
+.more{ width:100%; height:50px;  background:#f0f0f0;}
+.more input{ width:90%; height:24px; margin-left:5%; background:#E1E1E1; border:none; font:12px "宋体"; color:#33CCFF; line-height:24px;}
+
+input[type="button"],
+button {-webkit-appearance: none;}
+
+.bottom{ width:100%; height:200px;}
+.bottom a{ font:12px "宋体"; color:#666; float:left; padding:20px;}
+#bottom_box{ width:270px; margin:30px auto 0;}
+
+footer{ width:100%; height:50px; background:#fff; position:absolute; bottom:0; z-index:3; position:fixed;}
+footer div{ float:left;}
+.footer1,.footer2,.footer3,.footer4,.footer5{ width:19.8%; height:50px; border-right:1px solid #ccc; border-top:1px solid #ccc; background:#fff;}
+.footer1 a,.footer2 a,.footer3 a,.footer4 a,.footer5 a{ display:block; text-align:center; font:12px "宋体"; color:#33CCFF; line-height:20px; overflow:hidden;}
+.footer5{ width:19.7%; height:50px; border-right:none;}
+footer img{ width:20px; height:18px; padding-top:6px;}
+
+.contact{ width:60px; height:26px; background:#0BE6AF; z-index:2; position:absolute; bottom:60px; left:10px; position:fixed; border-radius:8px;}
+.contact input{ width:60px; height:26px; background:#0BE6AF; border:none; border-radius:8px; font:12px "宋体"; color:#fff; }
+</style>
+</head>
+
+<body>
+<nav>
+<h2>我是标题</h2>
+<a href="gerenzhongxin.html"><img src="img/客服_@3x.png"/></a>
+</nav>
+<header>
+<!--效果html开始-->
+	<div class="slider">
+	  <ul>
+	    <li><img src="img/8.jpg" ></li>
+		<li><img src="img/9.jpg" ></li>
+		<li><img src="img/6.jpg" ></li>
+		<li><img src="img/7.jpg" ></li>
+		<li><img src="img/10.jpg" ></li> 
+	  </ul>
+	</div>
+  <script type="text/javascript" src="js/yxMobileSlider.js"></script>
+  <script>
+    $(".slider").yxMobileSlider({width:640,height:401,during:3000})
+  </script>
+<!--效果html结束-->
+</header>
+<div class="news">
+	<p>公告：如需咨询客服，请在微信服务号留言。</p>
+</div>
+<div class="table1">
+	<table width="100%" border="0">
+  <tr>
+    <td width="44%"  height="240" rowspan="2"><a href="#"><img src="img/10.jpg"/></a></td>
+    <td height="120" colspan="2"><a href="#"><img src="img/6.jpg"/></a></td>
+  </tr>
+  <tr>
+    <td width="28%" height="120"><a href="#"><img src="img/8.jpg"/></a></td>
+    <td width="28%" height="120"><a href="#"><img src="img/9.jpg"/></a></td>
+  </tr>
+	</table>
+</div>
+<div class="box">
+	<p>换多少抵多少 无门槛抵用专区</p>
+</div>
+<div class="quan">
+<a href="#"><img class="img1" src="img/8.jpg"/></a>
+<a href="#"><img src="img/9.jpg"/></a>
+<a href="#"><img src="img/10.jpg"/></a>
+</div>
+<div class="search">
+	<input type="text" value="搜索商品：请输入商品关键字" />
+</div>
+<div class="table2">
+	<table width="100%" border="1">
+  <tr>
+    <td><p>零 食</p><a href="table2.html"><img src="img/8.jpg"/></a></td>
+    <td><p>零 食</p><a href="table2.html"><img src="img/8.jpg"/></a></td>
+    <td><p>零 食</p><a href="table2.html"><img src="img/8.jpg"/></a></td>
+  </tr>
+  <tr>
+    <td><p>零 食</p><a href="table2.html"><img src="img/8.jpg"/></a></td>
+    <td><p>零 食</p><a href="table2.html"><img src="img/8.jpg"/></a></td>
+    <td><p>零 食</p><a href="table2.html"><img src="img/8.jpg"/></a></td>
+  </tr>
+</table>
+</div>
+<div class="content1">
+	<div class="title1"><p>新 品 上 市</p></div>
+	<ul class="clear">
+		<li class="li3"><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+		<li><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+	</ul>
+</div>
+<div class="content2">
+	<div class="title2"><p>热 卖 推 荐</p></div>
+	<ul class="clear">
+		<li class="li3"><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+		<li><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+	</ul>
+	<ul class="clear">
+		<li class="li3"><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+		<li><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+	</ul>
+	<ul class="ul_last">
+		<li class="li3"><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+		<li><a href="chanpin_show.html"><img src="img/9.jpg"/></a><p>商品商品商品商品商品商品商品商品商品</p><h6>￥62.80</h6></li>
+	</ul>
+	<div class="more">
+		<a href="more.html"><input type="button" value="查看更多"/></a>
+	</div>
+</div>
+<div class="bottom">
+	<div id="bottom_box" class="clear">
+		<a href="shouye.html">店铺主页</a>
+		<a href="gerenzhongxin.html">会员中心</a>
+		<a href="#">关注我们</a>
+	</div>
+</div>
+<footer>
+	<div class="footer1"><a href="shouye.html"><img src="img/新建文件夹/客服_@3x.png"/><br/>商城</a></div><!--加图---->
+	<div class="footer2"><a href="allgood.html"><img src="img/新建文件夹/店铺_@3x.png"/><br/>所有商品</a></div>
+	<div class="footer3"><a href="#"><img src="img/新建文件夹/收藏_@3x.png"/><br/>生活家</a></div>
+	<div class="footer4"><a href="#"><img src="img/新建文件夹/评论_@3x.png"/><br/>购物帮助</a></div>
+	<div class="footer5"><a href="gerenzhongxin.html"><img src="img/新建文件夹/评论_@3x.png"/><br/>我的订单</a></div>
+</footer>
+<div class="contact">
+	<a href="yanzheng.html"><input type="button" value="联系客服"/></a>
+</div>
+</body>
+</html>

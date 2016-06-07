@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<style>
+*{margin:0px;padding:0px;}
+html,body{height:100%;}
+li{list-style-type:none;}
+img{vertical-align:middle;}
+img{ width:100%;  height:100%;}
+a{text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());}
+.clear{clear:both;}
+input[type="button"],
+button {-webkit-appearance: none;}
+
+.ce{display:block;width:25%;height: 100%;position: absolute;top: 0px; left:0; z-index:2; position:fixed;}
+.ce{ background:#ddd; padding-top:20px;}
+/*.ce li{ padding:10px;}*/
+.ce .ce_li .ce_img2{display:none;}
+
+.ce li a{ font:13px "宋体"; color:#666; display:block;cursor:pointer; width:84%; padding:10px;}
+.ce li:hover{ background:#f0f0f0;}
+.ce li:hover a{ color:#ff6600;}
+.ce li .dqian{background:none}
+.ce_img1{margin-top:-40px;}
+
+
+
+
+.ce2 li a{color:#666;}
+
+.ce2 .ce_li .ce_img2{display:block;padding:5px 0px;}
+.ce2 .ce_li .ce_img{display:none;}
+
+.ce2 li a:hover,.ce .xz{ background:#f0f0f0; color:#ff6600;}
+
+#div0,#div1,#div2,#div3,#div4{width:75%; margin-left:25%; background:#fff;}
+.title{ width:100%; height:20px; background:#f0f0f0;}
+.title p{ font:13px "宋体"; color:#666; line-height:20px; padding-left:10px;}
+.content{ width:100%; position:relative; border-bottom:1px solid #ccc;}
+.content ul{ margin-bottom:10px;}
+.content img{ width:50px; height:50px; padding:10px 0 0 10px;}
+.content p{ font:12px "宋体"; color:#666; position:absolute; top:15px; left:70px;}
+.content h4{ font:14px "宋体"; color:#ff6600; position:absolute; top:40px; left:70px;}
+
+.bottom{ width:100%; height:200px; z-index:3; background:#fff; position:absolute;}
+.bottom a{ font:12px "宋体"; color:#666; float:left; padding:20px;}
+#bottom_box{ width:270px; margin:30px auto 0;}
+
+
+footer{ width:100%; height:50px; background:#fff; position:absolute; bottom:0; z-index:4; position:fixed;}
+footer div{ float:left;}
+.footer1,.footer2,.footer3,.footer4,.footer5{ width:19.8%; height:50px; border-right:1px solid #ccc; border-top:1px solid #ccc; background:#fff;}
+.footer1 a,.footer2 a,.footer3 a,.footer4 a,.footer5 a{ display:block; text-align:center; font:12px "宋体"; color:#33CCFF; line-height:20px; overflow:hidden;}
+.footer5{ width:19.7%; height:50px; border-right:none;}
+footer img{ width:20px; height:18px; padding-top:6px;}
+
+.contact{ width:60px; height:26px; background:#0BE6AF; z-index:4; position:absolute; bottom:60px; left:10px; position:fixed; border-radius:8px;}
+.contact input{ width:60px; height:26px; background:#0BE6AF; border:none; border-radius:8px; font:12px "宋体"; color:#fff; }
+
+
+</style>
+</head>
+
+<body>
+<nav>
+<ul class="ce">
+	<li><a class="xz"id="navon0" href="javascript:void(0)">健康保健</a> </li>
+	<li><a id="navon1" href="javascript:void(0)">美味冲饮</a>  </li>
+	<li><a id="navon2" href="javascript:void(0)">美颜护肤</a> </li>
+	<li><a id="navon3" href="javascript:void(0)">零食坚果</a> </li>
+	<li><a id="navon4" href="javascript:void(0)">凑单专区</a> </li>
+	<div class="clear"></div>
+</ul>
+	<!--<ul class="ce">
+		<li class="li1"><a id="navon0" class="xz" href="javascript:void(0)">健康保健</a></li>
+		<li><a id="navon1" href="javascript:void(0)">美味冲饮</a></li>
+		<li><a id="navon2" href="javascript:void(0)">美颜护肤</a></li>
+		<li><a id="navon3" href="javascript:void(0)">零食坚果</a></li>
+		<li><a id="navon4" href="javascript:void(0)">凑单专区</a></li>
+		<div class="clear"></div>
+	</ul> -->
+</nav>
+
+<div id="div0">
+	<div class="title"><p>健康保健</p></div>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/9.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+</div>
+<div id="div1">
+	<div class="title"><p>美味冲饮</p></div>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/4.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+</div>
+<div id="div2">
+	<div class="title"><p>美颜护肤</p></div>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/6.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+</div>
+<div id="div3">
+	<div class="title"><p>零食坚果</p></div>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/8.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+</div>
+<div id="div4">
+	<div class="title"><p>凑单专区</p></div>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+	<a href="chanpin_show.html"/>
+		<div class="content">
+			<ul>
+				<li>
+					<img src="img/7.jpg"/>
+					<p>中粮可益康 膳食营养补充剂 50粒</p>
+					<h4>￥19.90</h4>
+				</li>
+			</ul>
+		</div>
+	</a>
+</div>
+<footer>
+	<div class="footer1"><a href="shouye.html"><img src="img/新建文件夹/客服_@3x.png"/><br/>商城</a></div><!--加图---->
+	<div class="footer2"><a href="allgood.html"><img src="img/新建文件夹/店铺_@3x.png"/><br/>所有商品</a></div>
+	<div class="footer3"><a href="#"><img src="img/新建文件夹/收藏_@3x.png"/><br/>生活家</a></div>
+	<div class="footer4"><a href="#"><img src="img/新建文件夹/评论_@3x.png"/><br/>购物帮助</a></div>
+	<div class="footer5"><a href="gerenzhongxin.html"><img src="img/新建文件夹/评论_@3x.png"/><br/>我的订单</a></div>
+</footer>
+<div class="contact">
+	<a href="#"><input type="button" value="联系客服"/></a>
+</div>
+<div class="bottom">
+	<div id="bottom_box" class="clear">
+		<a href="shouye.html">店铺主页</a>
+		<a href="gerenzhongxin.html">会员中心</a>
+		<a href="#">关注我们</a>
+	</div>
+</div>
+</body>
+</html>

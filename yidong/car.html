@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+
+<style>
+*{ margin:0; padding:0;}
+img{ width:100%; height:100%;}
+a{ text-decoration:none;}
+.clear:after{content:''; display:block; clear:both;}
+input[type="button"],
+input[type="text"],
+button {-webkit-appearance: none;}
+text{-webkit-appearance: none;}
+em{ font-style:normal;}
+
+.content{ width:100%; margin-top:10px; position:relative;}
+.content1 p{ font:13px "宋体"; color:#666; padding:10px; border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0;}
+.span1{ font:13px "宋体"; color:#00CCFF; padding:10px; position:absolute; top:0; right:10px;}
+
+.content2{ position:relative; padding-bottom:10px; border-bottom:1px solid #f0f0f0;}
+.content2 img{ width:50px; height:50px; margin:10px 0 0 38px;}
+.content2 p{ font:13px "宋体"; color:#666; padding:10px; position:absolute; top:4px; left:88px; display:block; width:200px;}
+.content2 h4{ float:left; font:13px "宋体"; color:#666; padding:10px; position:absolute; top:4px; right:10px; text-align:right;}
+.content2 span{ color:#999;}
+.check{ width:16px; height:16px; position:absolute; top:26px; left:10px; border-radius:8px; }
+.check2{ width:16px; height:16px; position:absolute; top:26px; left:10px; border-radius:8px; display:none;}
+
+footer{ width:100%; height:40px; background:#fff; border-top:1px solid #ccc; position:absolute; bottom:0; position:fixed; z-index:2;}
+.heji{ font:13px "宋体"; color:#ff6600; padding-left:30px; line-height:40px;}
+.input1{ width:75px; height:30px; position:absolute; top:5px; right:10px; border:none; background:#ccc; font:13px "宋体"; color:#fff; border-radius:3px;}
+.input2{ width:75px; height:30px; position:absolute; top:5px; right:10px; border:none; background:#ff6600; font:13px "宋体"; color:#fff; border-radius:3px; display:none;}
+.check1{ width:16px; height:16px; border:1px solid #ccc; border-radius:10px; background:#fff; position:absolute; top:26px; left:10px; display:none;}
+#p3{ width:90%; text-align:right;  margin:0 auto; display:none;}
+#p3 input{ width:20px; height:20px; border:1px solid #ccc; background:#fff;}
+#strong1{ font:13px "宋体"; color:#666;}
+.shanchu a{ font:13px "宋体"; color:#ff6600; line-height:40px; display:none; padding-left:30px;}
+footer p{ float:left;}
+</style>
+<script>
+//编辑按钮
+$(document).ready(function(){	
+var oEm=document.getElementById("em1");
+	var oSpan=document.getElementById("span1");
+	var oStrong=document.getElementById("strong");
+	var n1=Number(oStrong.innerHTML);
+	var n2=parseFloat(oEm.innerHTML);
+	
+	var onOff=true;
+	
+	$(".span1").click(function(){
+	if(onOff){
+	  $(".check").css("display","none");	  
+	  $(".check1").css("display","block");
+	// $(".input1").css("display","block");
+	//  $(".input2").css("display","none");
+	  $(".span1").html("完成");	
+	  $("#p3").css("display","block");
+	  onOff=false;
+	    }
+	   else{
+	  $(".check").css("display","block");	  
+	  $(".check1").css("display","none");
+	  $(".heji").css("display","block");
+	    $("h4").css("display","block");	  
+	 // $(".input1").css("display","none");
+	//  $(".input2").css("display","block");
+	  $(".span1").html("编辑");	
+	  $("#p3").css("display","none");
+	  oStrong.innerHTML=oStrong1.innerHTML;
+	  onOff=true;
+	   }
+	});
+	
+	 var oStrong1=document.getElementById("strong1");
+	 
+
+	$(".btn3").click(function(){
+	 n1--;
+			if(n1<1){
+			n1=1;
+			}
+			oStrong1.innerHTML=n1;
+		    oSpan.innerHTML=n1*n2+'元';
+			
+		});
+
+	$(".btn4").click(function(){
+	 n1++;
+			oStrong1.innerHTML=n1;
+			oSpan.innerHTML=n1*n2+'元';
+		});
+
+
+//合计价钱
+	
+	$(".check").click(function(){
+	if(onOff){
+			//$(".input1").css("background","#ff6600");
+			$(".span1").css("display","none");
+			 $(".input1").css("display","none");
+	       $(".input2").css("display","block");
+			oSpan.innerHTML=n1*n2+'元';
+			onOff=false;
+			}
+			else{
+			//$(".input1").css("background","#ccc");
+			$(".span1").css("display","block");
+			 $(".input1").css("display","block");
+	        $(".input2").css("display","none");
+			oSpan.innerHTML='0'+'元';
+			onOff=true;
+			}
+		});
+		
+//删除
+
+	$(".check1").click(function(){
+	if(onOff){
+			$(".check1").css("background","#f0f0f0");
+			$(".shanchu a").css("display","block");
+			$(".heji").css("display","none");
+			 $(".span1").css("display","none");
+			onOff=false;
+			}
+			else{
+			$(".check1").css("background","#fff");
+			$(".shanchu a").css("display","none");
+			$(".heji").css("display","block");
+			$(".span1").css("display","block");
+			onOff=true;
+			}
+		});
+  });
+</script>
+</head>
+
+<body>
+<div class="content">
+	<div class="content1">
+		<p>店铺：<span>中粮健康生活</span></p>
+		<span class="span1">编辑</span>
+	</div>
+	<div class="content2">
+		<div class="check1"></div>
+		<input class="check" type="checkbox"/>
+		<img src="img/9.jpg"/>
+		<p>中粮福临门正宗东北大米 自然稻香5kg<br/><span>5kg</span></p>
+		<h4><em id="em1">20.00元</em><br/>数量：<span id="strong">1</span></h4>
+		<div id="p3" class="clear">
+			<input class="btn3" type="button" value="-"/>
+			<strong id="strong1">1</strong>
+			<input class="btn4" type="button" value="+"/>
+		</div>
+	</div>
+</div>
+<footer>
+<p class="heji">合计：<span id="span1">0元</span></p>
+<p class="shanchu"><a href="#">删除</a></p>
+<a href="#"><input class="input1" type="button" value="结算"/></a>
+<a href="dingdan.html"><input class="input2" type="button" value="结算"/></a>
+</footer> 
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/chanpin.js"></script>
+<style>
+*{ margin:0; padding:0;}
+img{ width:100%; height:100%;}
+a{ text-decoration:none;}
+.clear:after{content:''; display:block; clear:both;}
+input[type="button"],
+button {-webkit-appearance: none;}
+em{ font-style:normal;}
+
+#all{ width:100%; height:100%; background:#000; z-index:2; position:fixed; filter:alpha(opacity=70); opacity:0.7; position:absolute; top:0; left:0; display:none;}
+
+a img {border:0}
+ul, ol, li {list-style-type:none;vertical-align:0}
+/* 效果CSS开始 */
+.slider{display:none}
+.focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
+.focus span.current{background:#ccc;}
+header{position:relative;}
+
+.title{ width:100%; border-bottom:1px solid #ccc; border-top:1px solid #ccc;}
+.title p{ font:13px "宋体"; color:#666; padding:10px;}
+.title h3{ font: bold 15px  "宋体"; color:#ff6600; padding:0 0 10px 10px;}
+
+.guige,.shengyu,.store{ width:100%; border-bottom:1px solid #ccc; position:relative;}
+.guige p,.shengyu p{ font:13px "宋体"; color:#999; padding:10px;}
+.guige span,.shengyu span{ font:14px "宋体"; color:#333}
+
+.p_left,.p_right{ font:13px "宋体"; color:#333; padding:10px;}
+.p_right{ position:absolute; top:0; right:0;}
+.list1 img{  width:40px; height:40px; padding:10px;}
+.list{ width:100%; z-index:3; position:absolute; bottom:0; position:fixed; background:#fff;display:none; border-top:1px solid #ccc;}
+.list1{ width:100%; border-bottom:1px solid #ccc; position:relative;}
+.p2{ display:block; width:70%; font:12px "宋体"; color:#333; padding:6px; position:absolute; top:10px; left:60px;}
+.list1 h3{ font: bold 13px "宋体"; color:#ff6600; position:absolute; bottom:10px; left:60px;}
+.p1{ position:absolute; top:6px; right:10px;}
+
+#list2{ width:100%; border-bottom:1px solid #ccc;}
+#list2 p,#list3 p{ font:12px "宋体"; color:#333;  padding:10px;}
+.g2,.g3{ float:left; height:20px; font:12px "宋体";  color:#ff6600; border:1px solid #ccc; background:#fff; padding:5px; margin:10px; line-height:20px;}
+.g1{ float:left; height:20px; font:12px "宋体"; background:#ff6600; color:#fff; border:1px solid #ccc; padding:5px; margin:10px; line-height:20px;}
+#list3{ width:100%; height:50px; position:relative; border-bottom:1px solid #ccc;}
+#list3 input{ width:30px; height:30px; border:1px solid #ccc; background:#f0f0f0;}
+#list3 strong{ font:13px "宋体"; color:#333;}
+#p3{ position:absolute; top:10px; right:10px;}
+
+#list4{ width:100%;}
+#list4 input{ width:45%; height:30px; border-radius:3px; margin-top:20px; margin-bottom:10px; }
+.input1,.input3{ font:12px "宋体"; color:#fff; background:#ff6600; border:none; margin-left:5%;}
+.input2,.input4{  font:12px "宋体"; color:#333;  background:#fff; border:1px solid #ccc;}
+
+.box{ width:100%; height:10px; border-bottom:1px solid #ccc; background:#f0f0f0;}
+
+.head{ width:100%; height:30px;}
+.head p{ font:13px "宋体"; color:#ff6600; text-align:center; line-height:30px;}
+
+.article{ width:100%; margin:50px auto;}
+.article img{ width:100%; height:100%; margin:16px auto;}
+.article p{ font:13px "宋体"; color:#333; text-align:center; line-height:30px;}
+
+.contact{ width:60px; height:26px; background:#fff; z-index:2; position:absolute; bottom:60px; left:10px; position:fixed; border-radius:10px; border:1px solid #0BE6AF;}
+.contact input{ width:60px; height:26px; background:#fff; border:none; border-radius:10px; font:12px "宋体"; color:#0BE6AF; }
+
+#list5{ width:100%; border-top:1px solid #ccc; position:absolute; bottom:0; position:fixed; z-index:2; background:#fff;}
+#list5 input{ width:45%; height:30px; border-radius:3px; margin-bottom:10px; margin-top:10px;}
+
+</style>
+
+<script>
+$(document).ready(function(){
+	$(".guige").click(function(){
+	  $(".list").slideToggle("quite");	  
+	  $("#all").css("display","block");
+	});
+	  $(".input1").click(function(){
+	  $(".list").css("display","block");	  
+	  $("#all").css("display","block");
+	});
+	 $(".input2").click(function(){
+	  $(".list").css("display","block");	  
+	  $("#all").css("display","block");
+	});
+	$(".p1").click(function(){
+	  $(".list").css("display","none");	
+	  $("#all").css("display","none");  
+	});
+	$(".g2").click(function(){
+	  $(".g1").css("background","#fff");	
+	  $(".g1").css("color","#ff6600");
+	  $(".g3").css("background","#fff");	
+	  $(".g3").css("color","#ff6600");
+	  $(".g2").css("background","#ff6600");	
+	  $(".g2").css("color","#fff");   
+	});
+	  $(".g3").click(function(){
+	  $(".g1").css("background","#fff");	
+	  $(".g1").css("color","#ff6600");
+	  $(".g2").css("background","#fff");	
+	  $(".g2").css("color","#ff6600");
+	  $(".g3").css("background","#ff6600");	
+	  $(".g3").css("color","#fff");   
+	});
+	 $(".g1").click(function(){
+	  $(".g1").css("background","#ff6600");	
+	  $(".g1").css("color","#fff");
+	  $(".g2").css("background","#fff");	
+	  $(".g2").css("color","#ff6600");
+	  $(".g3").css("background","#fff");	
+	  $(".g3").css("color","#ff6600");   
+	}); 
+	
+	  
+	// var oStrong=document.getElementById("strong");
+	// var n1=oStrong.innerHTML;
+
+	//$(".btn1").click(function(){
+	// n1--;
+		//	if(n1<1){
+		//	n1=1;
+			//}
+			//oStrong.innerHTML=n1;
+			
+		//});
+
+	//$(".btn2").click(function(){
+	// n1++;
+	//		oStrong.innerHTML=n1;
+	//	});
+	
+  });
+  
+
+</script>
+</head>
+
+<body>
+<header>
+<!--效果html开始-->
+	<div class="slider">
+	  <ul>
+	    <li><img src="img/8.jpg" ></li>
+		<li><img src="img/9.jpg" ></li>
+		<li><img src="img/6.jpg" ></li>
+		<li><img src="img/7.jpg" ></li>
+		<li><img src="img/10.jpg" ></li> 
+	  </ul>
+	</div>
+  <script type="text/javascript" src="js/yxMobileSlider.js"></script>
+  <script>
+    $(".slider").yxMobileSlider({width:640,height:501,during:3000})
+  </script>
+<!--效果html结束-->
+</header>
+<div class="title">
+	<p>我是标题我是标题我是标题我是标题我是标题</p>
+	<h3>￥20.00</h3>
+</div>
+<div class="guige">
+	<p>规格：<span>山核桃90g<!--默认第一个规格 --></span></p>
+</div>
+<div class="list">
+		<div class="list1">
+			<img src="img/9.jpg"/>
+			<p class="p2">我是标题我是标题我是标题我是标题我是标题...</p>
+			<h3><em id="em">20.00元</em></h3>
+			<p class="p1">x</p>
+		</div>
+		<div id="list2" class="clear">
+			<p>规格：</p>
+			<div class="g1">山核桃90g</div>
+			<div class="g2">山核桃90g</div>
+			<div class="g3">山核桃90g</div>
+		</div>
+		<div id="list3" class="clear">
+			<p>购买数量</p>
+				<div id="p3">
+						<input class="btn1" type="button" value="-"/>
+						<strong id="strong0">1</strong>
+						<input class="btn2" type="button" value="+"/>
+				</div>
+		</div>
+		<div id="list4" class="clear">
+			<a href="dingdan.html"><input class="input3" type="button" value="立即购买"/></a>
+			<a href="car.html"><input class="input4" type="button" value="加入购物车"/></a>
+		</div>
+</div>
+<div id="all"></div>
+<div class="shengyu">
+	<p>剩余:<span>100</span></p>
+	<p>运费:<span>￥6.00-8.00</span></p>
+	<p>全网销量:<span>3000</span></p>
+</div>
+<div class="store">
+	<p class="p_left">中粮健康生活</p>
+	<a href="#" class="p_right">进入本店 ></a>
+</div>
+<div class="box"></div>
+<div class="head">
+	<p>商品详情</p>
+</div>
+<div class="article">
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+</div>
+<div class="contact">
+	<a href="#"><input type="button" value="联系卖家"/></a>
+</div>
+
+<div id="list5" class="clear">
+	<a href="#"><input class="input1" type="button" value="立即购买"/></a>
+	<a href="#"><input class="input2" type="button" value="加入购物车"/></a>
+</div>
+
+</body>
+</html>

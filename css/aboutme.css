@@ -1,0 +1,39 @@
+/* CSS Document */
+
+#about{ width:60%; margin:0 auto; margin-top:100px;}
+.photo{ width:120px; height:120px; border-radius:60px; background:url(../images/10.jpg) no-repeat; margin:20px auto 0;}
+#about p{ display:block; font: bold 13px "Times New Roman", Times, serif; color:#999; }
+.p1{margin-top:30px; margin-left:43%;}
+.p2{ margin-top:10px; margin-left:47%;}
+.p3{ margin-top:10px; margin-left:46%;}
+.for{ width:28px; height:30px; background:url(../images/未标题-2.png) no-repeat; margin:30px auto;}
+
+#content,#photo_list,#jineng,#contact{ width:60%; margin:0 auto;}
+#content h2,#jineng h2,#contact h2{margin-top:100px;  margin-left:43%;}
+#content a,#jineng a,#contact a{ font: 30px 'Arizonia'; color:#666; }
+#content a:hover,#jineng a:hover,#contact a:hover{ color:#999;}
+#content p{ font:13px "微软雅黑"; line-height:30px; margin-top:20px; color:#999;}
+
+.clear:after{content:''; display:block; clear:both;}
+#photo_list ul,#jineng ul{ margin-top:30px;}
+#photo_list li{ float:left; margin-right:50px;}
+.photo_list1{ margin-left:200px;}
+
+#jineng ul{ position:relative;}
+#jineng li{ margin-top:30px; margin-left:200px;}
+#jineng span{ font:bold 20px "Times New Roman", Times, serif; color:#666;}
+.jineng1{ width:248px; height:11px; background:url(../images/未标题-8.png) no-repeat; position:absolute; top:8px; left:400px;}
+.jineng2{ width:248px; height:11px; background:url(../images/未标题-8.png) no-repeat 0 -11px; position:absolute; top:60px; left:400px;}
+.jineng3{ width:248px; height:11px; background:url(../images/未标题-8.png) no-repeat 0 -22px; position:absolute; top:116px; left:400px;}
+.jineng4{ width:248px; height:11px; background:url(../images/未标题-8.png) no-repeat 0 -33px; position:absolute; top:172px; left:400px;}
+
+.box{ height:300px; margin-top:30px; position:relative;}
+.box1,.box2,.box3,.box5{ display:inline-block; width:240px; height:30px; border:1px solid #FFCC66; border-radius:10px; font:13px "宋体"; color:#999;  padding-left:10px;}
+.box4{ display:inline-block; width:480px; height:190px; border:1px solid #FFCC66; border-radius:10px; font:13px "宋体"; color:#999; position:absolute; top:0; right:0;}
+.box2{ position:absolute; top:80px; left:30px;}
+.box3{ position:absolute; top:160px;px; left:30px;}
+.box1{ position:absolute; top:0; left:30px;}
+.box5{ position:absolute; top:250px; left:360px;}
+.box5{ background:#95DFC7; color:#fff;}
+
+

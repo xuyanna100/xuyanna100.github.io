@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<style>
+*{ margin:0; padding:0;}
+img{ width:100%; height:100%;}
+a{ text-decoration:none;}
+.clear:after{content:''; display:block; clear:both;}
+input[type="button"],
+input[type="text"],
+button {-webkit-appearance: none;}
+text{-webkit-appearance: none;}
+em{ font-style:normal;}
+
+header{ width:100%; position:relative; margin-bottom:20px;}
+header h4{ font:15px "宋体"; color:#666; padding:10px;}
+header p{ font:13px "宋体"; color:#666; padding:10px;}
+.p1{ font:14px "宋体"; position:absolute; top:0; right:10px;}
+
+.box{ width:100%; height:8px; background:#f6f6f6; border-bottom:1px solid #f0f0f0; }
+
+.content{ width:100%;}
+.content1 p{ font:13px "宋体"; color:#666; padding:10px; border-bottom:1px solid #f0f0f0;}
+
+.content2{ position:relative; padding-bottom:10px; border-bottom:1px solid #f0f0f0;}
+.content2 img{ width:50px; height:50px; margin:10px 0 0 10px;}
+.content2 p{ font:13px "宋体"; color:#666; padding:10px; position:absolute; top:4px; left:70px; display:block; width:200px;}
+.content2 h4{ font:13px "宋体"; color:#666; padding:10px; position:absolute; top:4px; right:10px; text-align:right;}
+#strong{ color:#999;}
+
+
+.content3{ position:relative; border-bottom:1px solid #f0f0f0;}
+.content3 p,.content3 span,.content5 p{ font:13px "宋体"; color:#666; padding:10px;}
+.content3 span{ position:absolute; top:0; right:10px;}
+.content4 input{ width:90%; margin:10px 0 10px 3%; height:30px; border:1px solid #f0f0f0; font:12px "宋体"; color:#999; padding-left:10px;}
+.content4{ border-bottom:1px solid #f0f0f0;}
+
+.content5{ position:relative; border-bottom:1px solid #f0f0f0;}
+.content5 span{ font:13px "宋体"; color:#ff6600; padding:10px; position:absolute; top:0; right:10px;}
+
+.pay{ width:100%; margin-top:10px;}
+.input2{ width:90%; height:35px;  margin:10px 0 10px 5%; background:#fff; font:12px "宋体"; color:#000; border:1px solid #ccc; border-radius:3px;}
+.input1{ width:90%; height:35px;  margin:10px 0 10px 5%; border:none; background:#22AC4B; font:12px "宋体"; color:#fff; border-radius:3px;}
+</style>
+</head>
+
+<body>
+
+</body>
+<header>
+	<a href="add.html">
+		<h4>收货人：<span class="span1">张三</span></h4><!--span1为后台数据 -->
+		<p class="p1">123456789</p><!--后台 -->
+		<p>收货地址: <span class="span2">中国中国中国中国中国中国中国中国中国中国</span></p><!--span2为后台数据 -->
+	</a>
+</header>
+<div class="box"></div>
+<div class="content">
+	<div class="content1">
+		<p>店铺： <span>中粮健康生活</span></p>
+	</div>
+	<div class="content2">
+		<img src="img/9.jpg"/>
+		<p>中粮福临门正宗东北大米 自然稻香5kg<br/><span>5kg</span></p>
+		<h4>￥<em id="em">20.00<!--后台数据 单价 --></em><br/>数量：<span id="strong">1<!--后台数据 数量 --></span></h4>
+	</div>
+	<div class="content3">
+		<p>运费</p>
+		<span id="span2">8.00元<!--后台数据 运费 --></span>
+	</div>
+	<div class="content4">
+		<input type="text" value="给卖家留言" />
+	</div>
+	<div class="content5">
+		<p>合计</p>
+		<span id="span1"><!--合计 --></span>
+	</div>
+</div>
+<div class="box"></div>
+<div class="pay">
+	<input class="input1" type="button" value="微信安全支付"/>
+	<input class="input2" type="button" value="找人代付"/>
+	<input class="input2" type="button" value="其他支付方式"/>
+</div>
+<script>
+$(document).ready(function(){	 
+
+	var oEm=document.getElementById("em");
+	var oSpan=document.getElementById("span1");
+	var oSpan2=document.getElementById("span2");
+	var oStrong=document.getElementById("strong");
+	//var n1=Number(oStrong.innerHTML);
+	//var n2=parseFloat(oEm.innerHTML);
+	//var n3=parseFloat(oSpan2.innerHTML);
+	var n1=parseFloat(oStrong.innerHTML);
+	var n2=parseFloat(oEm.innerHTML);
+	var n3=parseFloat(oSpan2.innerHTML);
+	 
+	
+	$(function(){
+			oSpan.innerHTML=n1*n2+n3+'元';
+		});
+  });
+  
+
+</script>
+</html>

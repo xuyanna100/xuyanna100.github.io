@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
+<title>商品展示</title>
+<style>
+*{ margin:0; padding:0;}
+img{ border:none;}
+a{ text-decoration:none;}
+li{ list-style:none;}
+.clear:after{content:''; display:block; clear:both;}
+nav{ width:100%; height:50px; background:#18CFD3;}
+nav div{ float:left;}
+nav p{ display:block; font:bold 14px "宋体"; color:#fff; padding-top:10px;}
+nav span{ font-weight:normal;}
+.img1{ padding:10px 0 0 10px;}
+.img2{ padding-top:10px;}
+.p1{ width:84%; height:50px; text-align:center; margin:0 auto;}
+
+a img {border:0}
+ul, ol, li {list-style-type:none;vertical-align:0}
+/* 效果CSS开始 */
+.slider{display:none}/*用于获取更加体验*/
+.focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
+.focus span.current{background:#ccc;}
+header{position:relative;}
+
+.nav2{ width:45%; background:#18cfd3; z-index:2; position:absolute; top:50px; left:0; display:none;}
+.nav2 a{ font:12px "宋体"; color:#fff;}
+.nav2 li{ padding:10px;}
+
+.content{ width:90%; margin:20px auto 0;}
+h2{ font: bold 20px "宋体"; color:#333; line-height:36px;}
+.content p{ font:13px "宋体"; color:#666; line-height:20px;}
+
+.title{ width:90%; margin:10px auto 0;}
+.title p{ font:12px "宋体"; color:#333;}
+.title span{ font:25px "宋体"; color:#EA5144;}
+.title input{ width:150px; height:28px; background:#ea5144; border:none; color:#fff; margin:10px 0 0 180px;}
+input[type="button"],
+button {-webkit-appearance: none;}
+
+.article{ width:100%; margin:40px auto;}
+.article img{ width:100%; height:100%; margin:16px auto;}
+.article p{ font:13px "宋体"; color:#333; text-align:center; line-height:30px;}
+
+.footer{ width:100%; height:40px; background:#18cfd3; z-index:1; margin-bottom:40px}
+.footer p{ font:13px "宋体"; color:#fff; text-align:center; line-height:36px;}
+
+footer input{ width:100%; height:40px; background:#F96B60; position:absolute; bottom:0; position:fixed; z-index:3; border:none; font:15px "宋体"; color:#fff;}
+
+</style>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".img1").click(function(){
+	  $(".nav2").slideToggle("quite");
+	});
+ });
+</script>
+</head>
+
+<body>
+<nav>
+<div>
+	<a href="#"><img class="img1" src="#"/></a>
+</div>
+<div class="p1">
+	<p>Hey<br/><span>Juice</span></p>
+</div>
+<div>
+	<img class="img2" src="#"/>
+</div>
+</nav>
+<div class="nav2">
+	<ul>
+		<li><a href="index.html">首页</a></li>
+		<li><a href="#">产品</a></li>
+		<li><a href="#">顾客口碑</a></li>
+		<li><a href="#">品牌理念</a></li>
+		<li><a href="#">配送范围查询</a></li>
+		<li><a href="#">帮助中心</a></li>
+		<li><a href="#">个人中心</a></li>
+		<li><a href="#">退出登录</a></li>
+	</ul>
+</div>
+<header>
+<!--效果html开始-->
+	<div class="slider">
+	  <ul>
+	    <li><img src="img/8.jpg" ></li>
+		<li><img src="img/9.jpg" ></li>
+		<li><img src="img/6.jpg" ></li>
+		<li><img src="img/7.jpg" ></li>
+		<li><img src="img/10.jpg" ></li> 
+	  </ul>
+	</div>
+  <script type="text/javascript" src="js/yxMobileSlider.js"></script>
+  <script>
+    $(".slider").yxMobileSlider({width:640,height:401,during:3000})
+  </script>
+<!--效果html结束-->
+</header>
+<div class="content">
+	<h2>轻断食计划 经典款</h2>
+	<p>   这是一个连续3天的清体计划，适合每个月一次，你喜欢挑战，喜欢颠覆自己固有的饮食，绿色、纯净的果蔬汁，清体只为Better Me！</p>
+</div>
+<div class="title">
+	<p>￥<span>490.00</span>元</p>
+	<input type="button" value="加入购物车"/>
+</div>
+<div class="article">
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+	<img src="img/8.jpg"/>
+	<p>柔和的经典款果蔬汁，3天轻断食过程温和，<br/>你不会觉得很饿</p>
+</div>
+<div class="footer">
+	<p>为更好的自己</p>
+</div>
+<footer>
+	<input type="button" value="加入购物车"/>
+</footer>
+</body>
+</html>
